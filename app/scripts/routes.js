@@ -1,3 +1,5 @@
+'use strict';
+
 angular
     .module('ProfileWebsite')
     .config(function($routeProvider) {

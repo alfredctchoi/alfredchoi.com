@@ -31,8 +31,15 @@
     <i class="fa fa-laptop fa-2x"></i>
     <h4 class="section-title">Experience</h4>
 
-    <div class="experience-container">
-      <h3>Senior Software Developer</h3>
+    <div ng-repeat="experience in experiences" class="experience-container">
+      <span class="experience-period">{{experience.period}}</span>
+      <p class="experience-title">{{experience.title}}</p>
+      <p class="experience-company-name">{{experience.company.name}}</p>
+      <ul class="text-left">
+        <li ng-repeat="responsibility in experience.responsibilities">
+          {{responsibility}}
+        </li>
+      </ul>
     </div>
 </section>
 
@@ -50,7 +57,7 @@
     </p>
 
     <div class="row">
-        <form role="form" class="text-left contact-form col-md-8 col-md-offset-2">
+        <form role="form" class="text-left contact-form col-md-8 col-md-offset-2  well well-lg">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" id="email" placeholder="Email Address">
@@ -61,7 +68,9 @@
                 <textarea id="message" placeholder="Message" class="form-control"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </form>
     </div>
 </section>
