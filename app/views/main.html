@@ -1,4 +1,4 @@
-<section id="intro" class="section">
+<section id="intro">
     <img class="main-logo" src="images/AC_Logo_Black.png" alt="AC_Logo_Black.png">
     <h2 class="logo-name">Alfred Choi</h2>
     <div class="logo-title">Software Developer</div>
@@ -7,54 +7,104 @@
     </p>
 </section>
 
-<section id="technologies" class="section">
-    <i class="fa fa-code fa-2x"></i>
-    <h4 class="section-title">Technologies</h4>
+<section id="achievements">
+    <div class="section-header">
+        <i class="fa fa-trophy fa-2x"></i>
+        <h4 class="section-title">Achievements</h4>
+    </div>
 
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th class="text-left">Technology</th>
-          <th class="text-right">Rating</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="technology in technologies">
-          <td class="text-left">{{technology.name}}</td>
-          <td class="text-right">{{technology.rating}} / 10</td>
-        </tr>
-      </tbody>
-    </table>
-</section>
-
-<section id="experience" class="section">
-    <i class="fa fa-laptop fa-2x"></i>
-    <h4 class="section-title">Experience</h4>
-
-    <div ng-repeat="experience in experiences" class="experience-container">
-      <span class="experience-period">{{experience.period}}</span>
-      <p class="experience-title">{{experience.title}}</p>
-      <p class="experience-company-name">{{experience.company.name}}</p>
-      <ul class="text-left">
-        <li ng-repeat="responsibility in experience.responsibilities">
-          {{responsibility}}
-        </li>
-      </ul>
+    <div ng-repeat="section in achievements">
+        <img class="company-logo" src="{{section.company.image}}" alt="{{section.company.image}}">
+        <ul>
+            <li class="text-left" ng-repeat="achievement in section.achievements">{{achievement}}</li>
+        </ul>
     </div>
 </section>
 
-<section id="education" class="section">
-    <i class="fa fa-graduation-cap fa-2x"></i>
-    <h4 class="section-title">Education</h4>
+<section id="technologies">
+    <div class="section-header">
+        <i class="fa fa-code fa-2x"></i>
+        <h4 class="section-title">Technologies</h4>
+    </div>
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="text-left">Technology</th>
+                <th class="text-right">Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="technology in technologies">
+                <td class="text-left">{{technology.name}}</td>
+                <td class="text-right">{{technology.rating}} / 10</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
-<section id="contact" class="section">
-    <i class="fa fa-envelope fa-2x"></i>
-    <h4 class="section-title">Contact Me</h4>
+<section id="experience">
+    <div class="section-header">
+        <i class="fa fa-laptop fa-2x"></i>
+        <h4 class="section-title">Experience</h4>
+    </div>
 
+    <div ng-repeat="experience in experiences" class="experience-container">
+        <div class="experience-company-logo text">
+            <img src="{{experience.company.image}}" alt="{{experience.company.image}}">
+            <p class="text-left">{{experience.company.description}}</p>
+        </div>
+        <div class="row">
+            <div class="experience-description-container col-md-8 text-left">
+                <p class="experience-title">{{experience.title}}</p>
+                <p class="experience-company-name">{{experience.company.name}}</p>
+                <p class="experience-company-location">{{experience.company.location}}</p>
+            </div>
+            <div class="experience-period col-md-4 text-right">
+                <span>{{experience.period}}</span>
+            </div>
+        </div>
+        <ul class="text-left">
+            <li ng-repeat="responsibility in experience.responsibilities">
+                {{responsibility}}
+            </li>
+        </ul>
+    </div>
+</section>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere in nibh nec porta. Suspendisse pulvinar orci ac elit dapibus, sed egestas dolor volutpat. Praesent iaculis, ipsum a placerat pretium, odio tellus molestie eros, ut condimentum ligula ligula ac enim.
-    </p>
+<section id="education">
+    <div class="section-header">
+        <i class="fa fa-graduation-cap fa-2x"></i>
+        <h4 class="section-title">Education</h4>
+    </div>
+
+    <div ng-repeat="program in education" class="experience-container">
+        <div class="education-company-logo text-left">
+            <img src="{{program.institution.image}}" alt="{{program.institution.image}}">
+        </div>
+        <div class="row">
+            <div class="experience-description-container col-md-8 text-left">
+                <p class="experience-title">{{program.program}}</p>
+                <p class="experience-company-name">{{program.institution.name}}</p>
+                <p class="experience-company-location">{{program.institution.location}}</p>
+            </div>
+            <div class="experience-period col-md-4 text-right">
+                <span>{{program.period}}</span>
+            </div>
+        </div>
+        <ul class="text-left">
+            <li ng-repeat="responsibility in experience.responsibilities">
+                {{responsibility}}
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-header">
+        <i class="fa fa-envelope fa-2x"></i>
+        <h4 class="section-title">Contact Me</h4>
+    </div>
 
     <div class="row">
         <form role="form" class="text-left contact-form col-md-8 col-md-offset-2  well well-lg">
@@ -69,7 +119,7 @@
             </div>
 
             <div class="text-right">
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>

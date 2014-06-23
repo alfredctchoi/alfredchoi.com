@@ -10,6 +10,8 @@ angular
                         title: 'Senior Web Developer',
                         period: '2011 - Present',
                         company: {
+                            image: 'images/vitalinsights_logo.png',
+                            link: 'http://www.vitalinsights.com',
                             name: 'Vital Insights',
                             location: 'Mississauga, Ontario',
                             description: 'Vital Insights is a leading provider of Customer Experience Management software solutions for the automotive industry with clients including BMW, Mini, Volkswagen and Mercedes-Benz'
@@ -28,15 +30,19 @@ angular
                         title: 'Freelance Developer',
                         period: '2004 - Present',
                         company: {
+                            link: null,
+                            image:'images/AC_Logo_Black.png',
                             name: 'Self Employed',
                             location: 'Toronto, Ontario',
                             description: 'Provide IT services to individuals and small businesses in Toronto.'
                         },
                         responsibilities: ['Gathered business requirements and drafted software proposals and estimates', 'Developed database driven web applications using C# (ASP.NET, MVC), PHP (Zend Framework), MSSQL, MySQL, AngularJS, JQuery, Javascript, HTML and CSS', 'Maintained software source code with Git ', 'Determined business challenges and propose IT solutions to clients and prospects ', 'Designed website mock-ups using Adobe Photoshop ', 'Installed and configured websites on IIS, Apache, and various web domain control panels', 'Provide onsite and remote technical support ', 'Perform on site network cable installation and configuration']
                     }, {
-                        title: 'Technical Support Representative/Junior Developer',
+                        title: 'Technical Support/Junior Developer',
                         period: '2008 - 2011',
                         company: {
+                            link: 'http://www.avantisystems.com',
+                            image: 'images/avanti_logo.png',
                             name: 'Avanti Computer Systems',
                             location: 'North York, Ontario',
                             description: 'Avanti is the leading provider of print management software to commercial and inplant printing plants. The software provides real time data on print jobs currently in production.'

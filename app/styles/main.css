@@ -71,9 +71,10 @@
     width: 300px;
     margin-bottom: 30px;
 }
-.section {
-    min-height: 600px;
-    text-align: center
+section {
+    min-height: 300px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .logo-name {
     text-transform: capitalize;
@@ -87,33 +88,61 @@
     color: #999;
     margin-bottom: 30px;
 }
+.section-header {
+  margin: 20px 0 40px;
+}
 .section-title {
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin:0;
 }
 .contact-form {
-  margin-top: 30px;
+    margin-top: 30px;
 }
-.experience-period{
-  font-weight: bold;
+
+/*Experience Section*/
+.experience-container, .education-container {
+    margin: 15px 0 15px 0;
 }
-.experience-container {
-  margin: 30px 0;
+.experience-period span {
+    background-color: #333;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
 }
-.experience-period{
-  background-color: #333;
-  color: white;
-  padding: 5px;
+.experience-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: normal;
 }
-.experience-title{
-  font-size: 18px;
-  margin-bottom: 0;
-  margin-top: 5px;
-  line-height: normal;
+.experience-company-name {
+    font-weight: bold;
+    margin: 0;
+    line-height: normal;
 }
-.experience-company-name{
-  font-weight: bold;
-  margin-top: 0;
-  line-height: normal;
+.experience-company-location {
+    margin-top: 0;
+    line-height: normal;
+    font-style: italic;
+}
+.experience-company-logo {
+  margin: 35px 0;
+}
+.experience-company-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/*Education Section*/
+.education-company-logo {
+  margin: 15px 0;
+}
+.education-company-logo img {
+    width: 100px;
+}
+
+
+.company-logo {
+  margin: 15px 0;
+  max-width: 175px;
 }
