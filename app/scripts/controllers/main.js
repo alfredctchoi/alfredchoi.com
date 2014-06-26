@@ -15,6 +15,7 @@ angular.module('ProfileWebsite')
         $scope.achievements = [{
             company: {
                 image: 'images/vitalinsights_logo.png',
+                link: 'http://www.vitalinsights.com'
             },
             achievements: [
                 'Architected and developed new survey platform from ground up',
@@ -26,7 +27,8 @@ angular.module('ProfileWebsite')
             ]
         }, {
             company: {
-                image: 'images/avanti_logo.png'
+                image: 'images/avanti_logo.png',
+                link: 'http://www.avantisystems.com'
             },
             achievements: [
                 'Developed an integrated online ticketing system that provids real time status updates on their support tickets',

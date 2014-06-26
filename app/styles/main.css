@@ -3,6 +3,10 @@
     padding-top: 80px;
     padding-bottom: 20px;
     line-height: 28px;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: black;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
  .header, .marketing, .footer {
@@ -89,7 +93,7 @@ section {
     margin-bottom: 30px;
 }
 .section-header {
-  margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 .section-title {
     text-transform: uppercase;
@@ -99,9 +103,8 @@ section {
 .contact-form {
     margin-top: 30px;
 }
-
 /*Experience Section*/
-.experience-container, .education-container {
+ .experience-container, .education-container {
     margin: 15px 0 15px 0;
 }
 .experience-period span {
@@ -126,23 +129,16 @@ section {
     font-style: italic;
 }
 .experience-company-logo {
-  margin: 35px 0;
+    margin: 35px 0;
 }
-.experience-company-logo img {
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
 /*Education Section*/
-.education-company-logo {
-  margin: 15px 0;
+ .education-company-logo {
+    margin: 15px 0;
 }
-.education-company-logo img {
-    width: 100px;
-}
-
-
 .company-logo {
-  margin: 15px 0;
-  max-width: 175px;
+    margin: 15px 0;
+    height: 30px;
+}
+.job-container {
+    margin: 10px 0;
 }
