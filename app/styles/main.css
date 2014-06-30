@@ -36,6 +36,21 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 730px;
     }
 }
+@media (max-width: 1200px){
+    .experience-period, .experience-period{
+        margin: 10px 0;
+    }
+}
+@media(min-width: 1200px){
+    p, .experience-description-container, .education-company-logo {
+        text-align: left;
+    }
+
+    .experience-period {
+        text-align: right;
+    }
+}
+
 .container-narrow > hr {
     margin: 30px 0;
 }
@@ -104,8 +119,8 @@ section {
     margin-top: 30px;
 }
 /*Experience Section*/
- .experience-container, .education-container {
-    margin: 15px 0 15px 0;
+ .experience-container, .education-container, .job-container {
+    margin: 45px 0 15px 0;
 }
 .experience-period span {
     background-color: #333;
@@ -129,16 +144,16 @@ section {
     font-style: italic;
 }
 .experience-company-logo {
-    margin: 35px 0;
+    margin: 0 0 15px 0;
 }
 /*Education Section*/
  .education-company-logo {
-    margin: 15px 0;
+    margin-bottom: 10px
 }
 .company-logo {
-    margin: 15px 0;
+    margin-bottom: 10px;
     height: 30px;
 }
-.job-container {
-    margin: 10px 0;
+.job-description {
+    margin-top: 15px;
 }

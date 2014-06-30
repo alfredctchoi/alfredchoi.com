@@ -17,7 +17,7 @@
         <a target="_BLANK" href="{{section.company.link}}">
             <img class="company-logo" src="{{section.company.image}}" alt="{{section.company.image}}">
         </a>
-        <ul>
+        <ul class="job-description">
             <li class="text-left" ng-repeat="achievement in section.achievements">{{achievement}}</li>
         </ul>
     </div>
@@ -52,23 +52,23 @@
     </div>
 
     <div ng-repeat="experience in experiences" class="experience-container">
-        <div class="experience-company-logo text">
+        <div class="experience-company-logo">
             <a target="_BLANK" href="{{experience.company.link}}">
                 <img class="company-logo" src="{{experience.company.image}}" alt="{{experience.company.image}}">
             </a>
-            <p class="text-left">{{experience.company.description}}</p>
+            <p>{{experience.company.description}}</p>
         </div>
         <div class="row">
-            <div class="experience-description-container col-md-8 text-left">
+            <div class="experience-description-container col-sm-12 col-xs-12 col-md-12 col-lg-8">
                 <p class="experience-title">{{experience.title}}</p>
                 <p class="experience-company-name">{{experience.company.name}}</p>
                 <p class="experience-company-location">{{experience.company.location}}</p>
             </div>
-            <div class="experience-period col-md-4 text-right">
+            <div class="experience-period col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <span>{{experience.period}}</span>
             </div>
         </div>
-        <ul class="text-left">
+        <ul class="text-left job-description">
             <li ng-repeat="responsibility in experience.responsibilities">
                 {{responsibility}}
             </li>
@@ -83,18 +83,18 @@
     </div>
 
     <div ng-repeat="program in education" class="experience-container">
-        <div class="education-company-logo text-left">
+        <div class="education-company-logo">
             <a target="_BLANK" href="{{program.institution.link}}">
                 <img class="company-logo" src="{{program.institution.image}}" alt="{{program.institution.image}}">
             </a>
         </div>
         <div class="row">
-            <div class="experience-description-container col-md-8 text-left">
+            <div class="experience-description-container col-sm-12 col-xs-12 col-md-12 col-lg-8">
                 <p class="experience-title">{{program.program}}</p>
                 <p class="experience-company-name">{{program.institution.name}}</p>
                 <p class="experience-company-location">{{program.institution.location}}</p>
             </div>
-            <div class="experience-period col-md-4 text-right">
+            <div class="experience-period col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <span>{{program.period}}</span>
             </div>
         </div>
@@ -112,8 +112,19 @@
         <h4 class="section-title">Contact Me</h4>
     </div>
 
-    <div class="row">
-        <form role="form" class="text-left contact-form col-md-8 col-md-offset-2  well well-lg">
+    <div>
+        <p class="text-center">
+            I would love to hear from you!
+            <br />Feel free to drop me a line or two at 
+            <br><a href="mailto:alfredchoi86@gmail.com"><h4>alfredchoi86@gmail.com</h4></a>
+        </p>
+        <div class="text-muted" style="margin-top: 100px">
+            <p class="text-center">
+                This site was developed using HTML, CSS, Bootstrap3, and AngularJS.<br/>  The source code can be found on <a target="_BLANK" href="https://github.com/alfredctchoi/profile">GitHub</a>.
+            </p>
+        </div>
+        <!-- todo: Need to add form with captcha -->
+        <!-- <form role="form" class="text-left contact-form col-md-8 col-md-offset-2  well well-lg">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" id="email" placeholder="Email Address">
@@ -127,6 +138,6 @@
             <div class="text-right">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-        </form>
+        </form> -->
     </div>
 </section>
