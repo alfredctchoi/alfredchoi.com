@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 730px;
     }
 }
+@media (max-width: 768px) {
+    .fixedHeader .infoContainer {
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .experience-period, .experience-period {
         margin: 10px 0;
@@ -194,7 +199,6 @@ section {
 .fixedHeader .title {
     margin-left: 2px;
 }
-
 .fixedHeader .infoContainer {
     float: right;
     margin-top: 35px;
