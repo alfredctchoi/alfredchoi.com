@@ -56,17 +56,19 @@
         <h4 class="section-title">Technologies</h4>
     </div>
 
-    <table class="table table-striped" ng-repeat="technology in technologies">
+    <table class="table" ng-repeat="technology in technologies">
         <thead>
             <tr>
                 <th class="text-left">{{technology.section}}</th>
-                <th class="text-right">Rating</th>
+                <th width="40%"></th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="entry in technology.technologies">
                 <td class="text-left">{{entry.name}}</td>
-                <td class="text-right">{{entry.rating}} / 10</td>
+                <td valign="center">
+                    <ac-rating-bar rating="entry.rating" description="entry.name" animate-rating="$root.animateRatingBars"></ac-rating-bar>
+                </td>
             </tr>
         </tbody>
     </table>

@@ -2,8 +2,8 @@
 
 angular
     .module('ProfileWebsite')
-    .directive('acScrollFixed', ['$window',
-        function($window) {
+    .directive('acScrollFixed', ['$window', '$rootScope',
+        function($window, $rootScope) {
             return {
                 restrict: 'A',
                 link: function(scope) {
@@ -14,6 +14,10 @@ angular
                                 scope.booleanChange = true;
                             } else {
                                 scope.booleanChange = false;
+                            }
+                            if(this.pageYOffset > 764 && !$rootScope.animateRatingBars)
+                            {
+                                $rootScope.animateRatingBars = true;
                             }
                             scope.$apply();
                         });
