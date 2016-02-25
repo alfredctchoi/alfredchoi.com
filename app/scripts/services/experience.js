@@ -7,8 +7,43 @@ angular
             return {
                 getExperiences: function() {
                     return [{
+                      title: 'Senior Software Engineer',
+                      period: '2015 - Present',
+                      company: {
+                        image: 'images/scribblelive_logo.png',
+                        link: 'http://www.scribblelive.com',
+                        name: 'ScribbleLive',
+                        location: 'Toronto, Ontario',
+                        description: 'Scribblelive started out as a real-time live blogging platform and has then evolved into a content marketing platform that is powered by data science.'
+                      },
+                      responsibilities: [
+                        'Migrated core features from existing .NET Web Forms architecture to a RESTful architecture using ReactJS (ES5) and Flux',
+                        'Developed additional API endpoints in NodeJS including unit tests in Express, and Mocha',
+                        'Prepared and deployed code into AWS production environments',
+                        'Reviewed code committed by other team members for code quality',
+                        'Maintained source code in Git repositories',
+                        'Partook in Scrum Agile workflows with one week sprints ',
+                        'Used JIRA to track sprint progress'
+                      ]
+                    },{
+                      title: 'Senior Software Developer',
+                      period: '2014 - 2015',
+                      company: {
+                        image: 'images/itravel2000_logo.gif',
+                        link: 'http://www.itravel2000.com',
+                        name: 'iTravel2000',
+                        location: 'Mississauga, Ontario',
+                        description: 'iTravel2000 is one of Canada\'s largest independent travel companies providing a web site that provides the best selection of vacation packages, flights and hotels.'
+                      },
+                      responsibilities: [
+                        'Re-developed existing flights search path to have a better functionality, UI, UX and to be responsive.  This was done using AngularJS, C#, Razor, HTML and CSS',
+                        'Collaborated with Marketing and Leadership to provide direction on designs of features to be implemented on the site',
+                        'Maintained source code in Microsoft Team Foundation Server',
+                        'Tracked task progress using JIRA'
+                      ]
+                    },{
                         title: 'Senior Web Developer',
-                        period: '2011 - Present',
+                        period: '2011 - 2014',
                         company: {
                             image: 'images/vitalinsights_logo.png',
                             link: 'http://www.vitalinsights.com',

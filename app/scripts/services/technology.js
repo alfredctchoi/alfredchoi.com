@@ -14,6 +14,9 @@ angular
                             name: 'AngularJS',
                             rating: '8'
                         }, {
+                          name: 'ReactJS',
+                          rating: '7'
+                        }, {
                             name: 'JQuery',
                             rating: '7'
                         }, {
@@ -35,6 +38,9 @@ angular
                             name: 'C#',
                             rating: '8'
                         }, {
+                          name: 'NodeJS',
+                          rating: '7'
+                        }, {
                             name: 'ASP.NET MVC',
                             rating: '8'
                         }, {
@@ -46,6 +52,9 @@ angular
                         technologies: [{
                             name: 'MSSQL',
                             rating: '8'
+                        }, {
+                          name: 'Redis',
+                          rating: '7'
                         }, {
                             name: 'MySQL',
                             rating: '6.5'
