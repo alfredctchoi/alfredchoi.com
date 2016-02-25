@@ -41,8 +41,8 @@
     </div>
 
     <div ng-repeat="section in achievements" class="job-container">
-        <a target="_BLANK" href="{{section.company.link}}">
-            <img class="company-logo" src="{{section.company.image}}" alt="{{section.company.image}}">
+        <a target="_BLANK" ng-href="{{section.company.link}}">
+            <img class="company-logo" ng-src="{{section.company.image}}" alt="{{section.company.image}}">
         </a>
         <ul class="job-description">
             <li class="text-left" ng-repeat="achievement in section.achievements">{{achievement}}</li>
@@ -83,7 +83,7 @@
     <div ng-repeat="experience in experiences" class="experience-container">
         <div class="experience-company-logo">
             <a target="_BLANK" href="{{experience.company.link}}">
-                <img class="company-logo" src="{{experience.company.image}}" alt="{{experience.company.image}}">
+                <img class="company-logo" ng-src="{{experience.company.image}}" alt="{{experience.company.image}}">
             </a>
             <p>{{experience.company.description}}</p>
         </div>
@@ -114,7 +114,7 @@
     <div ng-repeat="program in education" class="experience-container">
         <div class="education-company-logo">
             <a target="_BLANK" href="{{program.institution.link}}">
-                <img class="company-logo" src="{{program.institution.image}}" alt="{{program.institution.image}}">
+                <img class="company-logo" ng-src="{{program.institution.image}}" alt="{{program.institution.image}}">
             </a>
         </div>
         <div class="row">
